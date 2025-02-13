@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit School Achievements</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Submit School Details</h1>
+            <p>Enter your school’s achievements and details to be ranked and evaluated based on your performance.</p>
+        </div>
+    </header>
+
+    <!-- School Achievements Form Section -->
+    <section id="school-achievements">
+        <div class="container">
+            <h2>Details Submission Form</h2>
+            <form id="achievements-form" action="submit-achievements.php" method="POST">
+                
+                <!-- Academic Achievements -->
+                <div class="form-group">
+                    <label for="academic-achievements">Academic Achievements (e.g., awards, top scores, rankings):</label>
+                    <textarea id="academic-achievements" name="academic-achievements" rows="4" required></textarea>
+                </div>
+
+                <!-- Faculty Awards -->
+                <div class="form-group">
+                    <label for="faculty-awards">Faculty Awards and Recognition (e.g., teacher of the year, research accolades):</label>
+                    <textarea id="faculty-awards" name="faculty-awards" rows="4" required></textarea>
+                </div>
+
+                <!-- Student Achievements -->
+                <div class="form-group">
+                    <label for="student-achievements">Student Achievements (e.g., sports victories, art exhibitions, competition results):</label>
+                    <textarea id="student-achievements" name="student-achievements" rows="4" required></textarea>
+                </div>
+
+                <!-- Infrastructure Achievements -->
+                <div class="form-group">
+                    <label for="infrastructure-improvements">Infrastructure Achievements (e.g., new facilities, upgrades):</label>
+                    <textarea id="infrastructure-improvements" name="infrastructure-improvements" rows="4" required></textarea>
+                </div>
+
+                <!-- Extracurricular Achievements -->
+                <div class="form-group">
+                    <label for="extracurricular-achievements">Extracurricular Achievements (e.g., clubs, cultural events, sports teams):</label>
+                    <textarea id="extracurricular-achievements" name="extracurricular-achievements" rows="4" required></textarea>
+                </div>
+
+                <!-- Additional Comments -->
+                <div class="form-group">
+                    <label for="additional-comments">Additional Comments or Notable Information:</label>
+                    <textarea id="additional-comments" name="additional-comments" rows="4" placeholder="Optional: Any other achievements or notable information..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <input type="submit" value="Submit Details" class="btn-submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 School Grid. All Rights Reserved.</p>
+    </footer>
+
+    <script src="school-details.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
